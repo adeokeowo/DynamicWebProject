@@ -14,7 +14,7 @@ public class NewTest {
  private WebDriver driver;		
  @Test				
  public void testEasy() {	
-  driver.get("http://localhost:8080/DynamicWebProject/");  
+  driver.get("http://localhost:6274/DynamicWebProject/");  
   String title = driver.getTitle();				 
   AssertJUnit.assertTrue(title.contains("Dynamic web project")); 		
  }
