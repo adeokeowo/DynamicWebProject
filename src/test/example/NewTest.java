@@ -1,5 +1,7 @@
 package test.example;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;		
 import org.openqa.selenium.WebDriver;		
 import org.openqa.selenium.firefox.FirefoxDriver;		
@@ -12,9 +14,9 @@ public class NewTest {
  private WebDriver driver;		
  @Test				
  public void testEasy() {	
-  driver.get("http://demo.guru99.com/test/guru99home/");  
+  driver.get("http://localhost:8080/DynamicWebProject/");  
   String title = driver.getTitle();				 
-  Assert.assertTrue(title.contains("Dynamic web project")); 		
+  AssertJUnit.assertTrue(title.contains("Dynamic web project")); 		
  }
  
  @BeforeTest
